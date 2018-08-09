@@ -30,9 +30,14 @@ The steps of test first development (TFD) are overviewed in the UML activity dia
 
 ![Figure 1. The steps of test-first development (TFD)](http://www.agiledata.org/images/tddSteps.jpg)
 
-I like to describe TDD with this simple formula:
+I like to describe TDD with this simple formula: $TDD = Refactoring + TFD$
 
-  $TDD = Refactoring + TFD$
+TDD completely turns _traditional_ development around. When you:
 
-TDD completely turns traditional development around. When you first go to implement a new feature, the first question that you ask is whether the existing design is the best design possible that enables you to implement that functionality. If so, you proceed via a TFD approach.  If not, you refactor it locally to change the portion of the design affected by the new feature, enabling you to add that feature as easy as possible. As a result you will always be improving the quality of your design, thereby making it easier to work with in the future.
-Instead of writing functional code first and then your testing code as an afterthought, if you write it at all, you instead write your test code before your functional code.  Furthermore, you do so in very small steps – one test and a small bit of corresponding functional code at a time.  A programmer taking a TDD approach refuses to write a new function until there is first a test that fails because that function isn’t present. In fact, they refuse to add even a single line of code until a test exists for it.  Once the test is in place they then do the work required to ensure that the test suite now passes (your new code may break several existing tests as well as the new one).  This sounds simple in principle, but when you are first learning to take a TDD approach it proves require great discipline because it is easy to “slip” and write functional code without first writing a new test.  One of the advantages of [pair programming}(http://www.amazon.com/exec/obidos/ASIN/0201745763/ambysoftinc) is that your pair helps you to stay on track.
+- First go to __implement__ a new feature, the first question that you ask is whether the existing design is the _best_ design possible that enables you to implement that functionality.
+- If so, you proceed via a __TFD approach__, if not, you refactor it locally to change the portion of the design affected by the new feature, enabling you to add that feature as easy as possible.
+- As a result you will always be __improving the quality__ of your `design`, thereby making it easier to work with in the future.
+
+Instead of writing `functional code` first and then your testing code as an afterthought, if you write it at all, you instead write your test code before your functional code. Furthermore, you do so in very small steps – one test and a small bit of corresponding functional code at a time.
+
+A programmer taking a `TDD` approach refuses to write a new `function` until there is first a test that fails because that function __isn’t present__. In fact, they refuse to add even a single line of code until a `test` exists for it. Once the test is in place they then do the work required to ensure that the test suite now passes (your new code may break several existing tests as well as the new one).  This sounds simple in principle, but when you are first learning to take a TDD approach it proves require great discipline because it is easy to “slip” and write functional code without first writing a new test.  One of the advantages of [pair programming}(http://www.amazon.com/exec/obidos/ASIN/0201745763/ambysoftinc) is that your pair helps you to stay on track.
